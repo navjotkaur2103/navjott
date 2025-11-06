@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shimmer Jewels | Home</title>
+  <link rel="stylesheet" href="cc.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">💎 PlumMist</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Discover the Beauty of Fine Jewelry</h1>
+    <p>Elegance. Luxury. Timeless Designs.</p>
+    <button onclick="scrollToSection('categories')">Shop Now</button>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="categories">
+    <h2>Our Categories</h2>
+    <div class="category-grid">
+      <div class="card" onclick="openCategory('rings.html')">
+        <img src="../rings.jpeg" alt="Rings" />
+        <h3>Rings</h3>
+      </div>
+      <div class="card" onclick="openCategory('necklaces.html')">
+        <img src="../neckk.jpg" alt="Necklaces" />
+        <h3>Necklaces</h3>
+      </div>
+      <div class="card" onclick="openCategory('earrings.html')">
+        <img src="../product-jpeg.jpg" alt="Earrings" />
+        <h3>Earrings</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>Featured Jewelry</h2>
+    <div class="gallery-grid">
+      <img src="../fj 1.jpeg" alt="Jewelry 1" />
+      <img src="../fj 2.jpeg" alt="Jewelry 2" />
+      <img src="../fj 3.jpeg" alt="Jewelry 3" />
+      <img src="../fj 4.jpeg" alt="Jewelry 4" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h3>Subscribe to our Newsletter</h3>
+    <form id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Shimmer Jewels | All Rights Reserved</p>
+  </footer>
+
+  <script src="cc.js"></script>
+</body>
+</html>
